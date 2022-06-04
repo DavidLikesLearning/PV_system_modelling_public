@@ -9,7 +9,10 @@ class KmlTri:
         
         ''' produces a (Number of triangles,3,3) array where each value is a coordinate 
          (lat, lon or alt). Each array is a coordinate triple. Each
-         inner list is a triangle on the panels in question.'''
+         inner list is a triangle on the panels in question.
+         
+         This code was built leveraging kml structure in early 2022, and was designed using 
+         sets of 6 triangles built from the 3D polygon feature in Google Earth'''
         
         with open(file, 'rt', encoding="utf-8") as myfile:
             doc=myfile.read()
